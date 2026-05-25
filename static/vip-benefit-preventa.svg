@@ -1,0 +1,17 @@
+<svg width="700" height="520" viewBox="0 0 700 520" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="ticket" x1="320" y1="120" x2="560" y2="330" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#EFF7FF"/>
+      <stop offset="0.48" stop-color="#C9D6E5"/>
+      <stop offset="1" stop-color="#617082"/>
+    </linearGradient>
+  </defs>
+  <g opacity="0.28">
+    <rect x="374" y="160" width="196" height="132" rx="26" fill="url(#ticket)"/>
+    <path d="M398 160C398 180 382 196 362 196C382 196 398 212 398 232V238C398 258 382 274 362 274C382 274 398 290 398 310" stroke="#A5B6C8" stroke-width="10" stroke-linecap="round"/>
+    <path d="M546 160C546 180 562 196 582 196C562 196 546 212 546 232V238C546 258 562 274 582 274C562 274 546 290 546 310" stroke="#A5B6C8" stroke-width="10" stroke-linecap="round"/>
+    <rect x="422" y="122" width="104" height="74" rx="18" fill="#F1C45B"/>
+    <path d="M448 142H500" stroke="#6F4B16" stroke-width="8" stroke-linecap="round"/>
+    <path d="M474 136V174" stroke="#6F4B16" stroke-width="8" stroke-linecap="round"/>
+  </g>
+</svg>

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 1000" role="img" aria-labelledby="title desc">
+<title>Poster Michael</title>
+<desc>Caratula estilizada para la pelicula Michael.</desc>
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0%" stop-color="#090b12"/>
+<stop offset="55%" stop-color="#151014"/>
+<stop offset="100%" stop-color="#050607"/>
+</linearGradient>
+<linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0%" stop-color="#fff4c8"/>
+<stop offset="45%" stop-color="#f0c86e"/>
+<stop offset="100%" stop-color="#a56a19"/>
+</linearGradient>
+<radialGradient id="glow" cx="50%" cy="25%" r="60%">
+<stop offset="0%" stop-color="#f1cf82" stop-opacity="0.7"/>
+<stop offset="50%" stop-color="#f1cf82" stop-opacity="0.08"/>
+<stop offset="100%" stop-color="#f1cf82" stop-opacity="0"/>
+</radialGradient>
+</defs>
+<rect width="720" height="1000" rx="42" fill="url(#bg)"/>
+<rect width="720" height="1000" rx="42" fill="url(#glow)"/>
+<path d="M120 870 C210 760, 250 650, 282 470 C304 350, 334 284, 374 238 C410 196, 452 176, 510 166 C484 210, 470 246, 472 288 C474 328, 492 366, 520 404 C546 440, 564 474, 572 520 C582 576, 570 630, 540 678 C518 714, 492 744, 458 770 C430 790, 408 818, 398 846 C388 874, 390 906, 404 934 L120 934 Z" fill="#0d0f16" opacity="0.94"/>
+<path d="M448 178 C494 214, 536 274, 552 340" fill="none" stroke="#f5d991" stroke-width="14" stroke-linecap="round" opacity="0.9"/>
+<circle cx="478" cy="144" r="24" fill="#f7de9b"/>
+<rect x="72" y="72" width="220" height="54" rx="27" fill="#141821" stroke="#8a6725" stroke-width="2"/>
+<text x="182" y="107" fill="#f5d991" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="700" text-anchor="middle">PROXIMAMENTE</text>
+<text x="78" y="748" fill="#f8e9bd" font-family="Georgia, 'Times New Roman', serif" font-size="110" font-weight="700" letter-spacing="5">MICHAEL</text>
+<text x="82" y="804" fill="#d1c5ad" font-family="Segoe UI, Arial, sans-serif" font-size="34" letter-spacing="8">EL EVENTO MUSICAL</text>
+<line x1="84" y1="838" x2="636" y2="838" stroke="#8a6725" stroke-width="2" opacity="0.7"/>
+<text x="82" y="884" fill="#f0c86e" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="700">AURORA VIP PREMIERE</text>
+<text x="82" y="922" fill="#d1c5ad" font-family="Segoe UI, Arial, sans-serif" font-size="24">Una caratula local para evitar imagen rota en el mockup.</text>
+</svg>

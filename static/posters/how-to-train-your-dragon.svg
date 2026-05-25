@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 500" role="img" aria-labelledby="title desc">
+<title>How to Train Your Dragon</title>
+<desc>Caratula estilizada de How to Train Your Dragon.</desc>
+<defs>
+<linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0%" stop-color="#173c60"/>
+<stop offset="100%" stop-color="#0b1524"/>
+</linearGradient>
+</defs>
+<rect width="720" height="500" rx="32" fill="url(#sky)"/>
+<circle cx="564" cy="118" r="54" fill="#f8d690"/>
+<path d="M0 370 C104 346, 218 360, 352 334 C486 308, 592 290, 720 312 L720 500 L0 500 Z" fill="#122432"/>
+<path d="M350 172 C392 114, 476 116, 524 160 C484 164, 448 182, 418 206 C380 236, 344 244, 294 232 C310 210, 326 192, 350 172 Z" fill="#0c1017"/>
+<path d="M350 172 C326 180, 306 194, 286 214 C248 250, 214 266, 162 264 C188 232, 222 206, 268 190 C298 180, 324 174, 350 172 Z" fill="#0c1017"/>
+<text x="48" y="88" fill="#d2f0ff" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="700">FAMILY NIGHT</text>
+<text x="48" y="296" fill="#ffffff" font-family="Georgia, serif" font-size="58" font-weight="700">How to Train</text>
+<text x="48" y="362" fill="#f8d690" font-family="Georgia, serif" font-size="58" font-weight="700">Your Dragon</text>
+</svg>

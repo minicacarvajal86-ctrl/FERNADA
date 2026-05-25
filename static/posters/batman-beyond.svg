@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 500" role="img" aria-labelledby="title desc">
+<title>Batman Beyond</title>
+<desc>Caratula estilizada de Batman Beyond.</desc>
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0%" stop-color="#09090e"/>
+<stop offset="58%" stop-color="#1c0c12"/>
+<stop offset="100%" stop-color="#040408"/>
+</linearGradient>
+</defs>
+<rect width="720" height="500" rx="32" fill="url(#bg)"/>
+<circle cx="540" cy="132" r="62" fill="#8b1526" opacity="0.95"/>
+<path d="M514 120 L540 172 L566 120 L596 146 L572 206 L540 188 L508 206 L484 146 Z" fill="#f5445d"/>
+<path d="M0 420 C120 372, 220 354, 338 334 C460 314, 572 320, 720 360 L720 500 L0 500 Z" fill="#0d0e16"/>
+<text x="48" y="88" fill="#f06d82" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="700">FUNCION VIP</text>
+<text x="48" y="324" fill="#ffffff" font-family="Georgia, serif" font-size="82" font-weight="700">Batman</text>
+<text x="48" y="404" fill="#ff536f" font-family="Georgia, serif" font-size="82" font-weight="700">Beyond</text>
+</svg>

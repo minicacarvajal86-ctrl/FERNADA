@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 500" role="img" aria-labelledby="title desc">
+<title>TRON Ares</title>
+<desc>Caratula estilizada de TRON Ares.</desc>
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0%" stop-color="#040812"/>
+<stop offset="55%" stop-color="#08172d"/>
+<stop offset="100%" stop-color="#02040a"/>
+</linearGradient>
+</defs>
+<rect width="720" height="500" rx="32" fill="url(#bg)"/>
+<g stroke="#4dd8ff" stroke-width="6" opacity="0.8">
+<path d="M68 420 H652"/>
+<path d="M110 86 V420"/>
+<path d="M232 86 V420"/>
+<path d="M354 86 V420"/>
+<path d="M476 86 V420"/>
+<path d="M598 86 V420"/>
+</g>
+<circle cx="538" cy="176" r="92" fill="#10243f" stroke="#60ebff" stroke-width="10"/>
+<circle cx="538" cy="176" r="38" fill="#60ebff"/>
+<text x="48" y="88" fill="#8feeff" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="700">MODO 4DX</text>
+<text x="48" y="328" fill="#d7fbff" font-family="Segoe UI, Arial, sans-serif" font-size="94" font-weight="800">TRON:</text>
+<text x="48" y="416" fill="#66eaff" font-family="Segoe UI, Arial, sans-serif" font-size="94" font-weight="800">ARES</text>
+</svg>

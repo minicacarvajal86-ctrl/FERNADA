@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: aurora-vip
+    runtime: python
+    plan: free
+    rootDir: estilos
+    buildCommand: pip install -r requirements.txt
+    startCommand: python app.py
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.4

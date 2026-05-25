@@ -1,0 +1,38 @@
+<svg width="900" height="700" viewBox="0 0 900 700" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="120" y1="80" x2="760" y2="620" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#3C2507"/>
+      <stop offset="0.5" stop-color="#1A140B"/>
+      <stop offset="1" stop-color="#0A0C12"/>
+    </linearGradient>
+    <linearGradient id="bar" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#FFF0B0"/>
+      <stop offset="0.45" stop-color="#E0B04F"/>
+      <stop offset="1" stop-color="#8C5E14"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(680 140) rotate(120) scale(280 220)">
+      <stop stop-color="#FFD978" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#FFD978" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="900" height="700" rx="36" fill="url(#bg)"/>
+  <rect width="900" height="700" rx="36" fill="url(#glow)"/>
+  <g opacity="0.26">
+    <g transform="translate(470 90) rotate(14)">
+      <rect x="0" y="0" width="240" height="126" rx="18" fill="url(#bar)"/>
+      <path d="M22 28H218L194 98H46L22 28Z" fill="#FFF4C1" fill-opacity="0.55"/>
+      <path d="M36 22H204L186 46H54L36 22Z" fill="#FFF8DA" fill-opacity="0.7"/>
+    </g>
+    <g transform="translate(565 188) rotate(14)">
+      <rect x="0" y="0" width="220" height="118" rx="18" fill="url(#bar)"/>
+      <path d="M22 28H198L176 92H44L22 28Z" fill="#FFF4C1" fill-opacity="0.48"/>
+      <path d="M34 22H186L170 44H50L34 22Z" fill="#FFF8DA" fill-opacity="0.66"/>
+    </g>
+    <g transform="translate(430 260) rotate(14)">
+      <rect x="0" y="0" width="248" height="132" rx="18" fill="url(#bar)"/>
+      <path d="M24 30H224L196 104H52L24 30Z" fill="#FFF4C1" fill-opacity="0.5"/>
+      <path d="M38 22H210L192 48H56L38 22Z" fill="#FFF8DA" fill-opacity="0.68"/>
+    </g>
+  </g>
+  <circle cx="760" cy="120" r="110" fill="#FFE18B" fill-opacity="0.08"/>
+</svg>

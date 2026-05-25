@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aurora VIP Mockups</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/styles.css') }}"
+    />
+  </head>
+  <body>
+    <main class="page-shell">
+      <header class="site-header">
+        <div class="header-content">
+          <span class="eyebrow">MOCADS AURORA VIP</span>
+          <h1>Tres pantallas premium para la plataforma del cine</h1>
+        </div>
+        <a class="gold-button header-cta" href="#mockups">Ver los 3 mockups</a>
+      </header>
+
+      <section class="intro-grid">
+        <article class="intro-card">
+          <span class="section-kicker">Direccion visual</span>
+          <h2>Cine premium con identidad visual Aurora</h2>
+          <p>
+            Se construye una experiencia visual de escritorio con cartelera
+            reciente, lanzamientos, registro VIP y una pantalla exclusiva para
+            miembros de <strong>AURORA VIP</strong>.
+          </p>
+        </article>
+
+        <article class="metrics-card">
+          {% for metric in showcase_metrics %}
+          <div class="metric-box">
+            <strong>{{ metric.value }}</strong>
+            <span>{{ metric.label }}</span>
+          </div>
+          {% endfor %}
+        </article>
+      </section>
+
+      <section class="mockup-section" id="mockups">
+        <div class="section-head">
+          <span class="eyebrow">SHOWCASE</span>
+          <h2>Mockup 1, Mockup 2 y Mockup 3</h2>
+          <p>
+            Inicio del cine con menu lateral y cartelera, login de registro con
+            planes Oro y Diamante, y la experiencia exclusiva de beneficios y
+            estrenos VIP Aurora.
+          </p>
+        </div>
+
+        <div class="mockup-stack">
+          <article class="mockup-card">
+            <div class="mockup-label">
+              <span>01</span>
+              <div>
+                <strong>Pantalla principal</strong>
+                <p>Home del cine con portada cinematografica</p>
+              </div>
+            </div>
+
+            <section class="desktop-mockup cinema-ui">
+              <aside class="side-nav">
+                <div class="brand-lockup">
+                  <span class="brand-ring"></span>
+                  <div>
+                    <strong>AURORA</strong>
+                    <small>cinema platform</small>
+                  </div>
+                </div>
+
+                <nav class="sidebar-menu">
+                  {% for item in sidebar_links %}
+                  <a href="#" class="{% if item.label == 'Aurora VIP' %}active{% endif %}">
+                    <span class="nav-icon {% if item.label == 'Aurora VIP' %}vip-card-icon{% endif %}">
+                      <img
+                        src="{{ url_for('static', filename=item.icon) }}"
+                        alt=""
+                        aria-hidden="true"
+                      />
+                    </span>
+                    <span>{{ item.label }}</span>
+                  </a>
+                  {% endfor %}
+                </nav>
+
+                <div class="vip-mini-card">
+                  <small>Programa premium</small>
+                  <strong>AURORA VIP</strong>
+                  <p>Acceso a lanzamientos, preventas y lounge exclusivo.</p>
+                </div>
+              </aside>
+
+              <div class="mockup-main">
+                <header class="top-strip">
+                  <div class="brand-tags">
+                    {% for brand in top_brands %}
+                    <span>{{ brand }}</span>
+                    {% endfor %}
+                  </div>
+                  <div class="vip-chip">Aurora VIP</div>
+                </header>
+
+                <section
+                  class="hero-banner"
+                  style="--hero-image: url('{{ featured_premiere.image }}');"
+                >
+                  <div class="hero-copy">
+                    <span class="hero-tag">{{ featured_premiere.tag }}</span>
+                    <h3>{{ featured_premiere.headline }}</h3>
+                    <p>
+                      {{ featured_premiere.description }}
+                    </p>
+                    <div class="hero-meta">
+                      {% for detail in featured_premiere.meta %}
+                      <span>{{ detail }}</span>
+                      {% endfor %}
+                    </div>
+                    <div class="hero-actions">
+                      <a href="#" class="gold-button">Ver trailer</a>
+                      <a href="#" class="ghost-button">Comprar entradas</a>
+                    </div>
+                  </div>
+                  <div class="hero-spotlight">
+                    <span class="hero-spotlight-label">Funcion destacada</span>
+                    <strong>{{ featured_premiere.title }}</strong>
+                    <p>{{ featured_premiere.schedule }}</p>
+                  </div>
+                </section>
+
+                <section class="content-block">
+                  <div class="block-head">
+                    <h4>Peliculas recientes</h4>
+                    <span>Actualizado hoy</span>
+                  </div>
+                  <div class="poster-grid">
+                    {% for item in recent_releases %}
+                    <article class="poster-card">
+                      <div class="poster-media">
+                        <img src="{{ item.image }}" alt="{{ item.title }}" />
+                        <span>{{ item.tag }}</span>
+                      </div>
+                      <h5>{{ item.title }}</h5>
+                      <p>{{ item.meta }}</p>
+                    </article>
+                    {% endfor %}
+                  </div>
+                </section>
+
+                <section class="content-block">
+                  <div class="block-head">
+                    <h4>Cartelera de lanzamiento</h4>
+                    <span>Modo cinema schedule</span>
+                  </div>
+                  <div class="launch-grid">
+                    {% for item in launch_calendar %}
+                    <article class="launch-card">
+                      <div class="launch-poster">
+                        <img src="{{ item.image }}" alt="{{ item.title }}" />
+                      </div>
+                      <strong>{{ item.title }}</strong>
+                      <p>{{ item.format }}</p>
+                      <span>{{ item.date }}</span>
+                    </article>
+                    {% endfor %}
+                  </div>
+                </section>
+              </div>
+            </section>
+          </article>
+
+          <article class="mockup-card">
+            <div class="mockup-label">
+              <span>02</span>
+              <div>
+                <strong>Login y registro</strong>
+                <p>Acceso a membresia Aurora VIP</p>
+              </div>
+            </div>
+
+            <section class="desktop-mockup auth-ui">
+              <div class="auth-panel auth-copy">
+                <span class="section-kicker">REGISTRO VIP</span>
+                <h3>Ingresa a Aurora VIP</h3>
+                <p>
+                  Eleva cada estreno a una experiencia de prestigio con acceso
+                  prioritario, privilegios exclusivos y el distintivo VIP de
+                  Aurora reservado para quienes eligen lo excepcional.
+                </p>
+
+                <div class="auth-benefits">
+                  <span>Entradas premium</span>
+                  <span>Preventa exclusiva</span>
+                  <span>Lounge Aurora</span>
+                  <span class="vip-pass-chip">VIP PASS</span>
+                </div>
+              </div>
+
+              <div class="auth-panel form-card">
+                <div class="form-tabs">
+                  <button type="button" class="active">Registrarse</button>
+                  <button type="button">Iniciar sesion</button>
+                </div>
+
+                <div class="field-grid">
+                  <label>
+                    <span>Nombre completo</span>
+                    <div class="input-shell">Carlos Mendoza</div>
+                  </label>
+                  <label>
+                    <span>Correo</span>
+                    <div class="input-shell">cliente@aurora.com</div>
+                  </label>
+                  <label>
+                    <span>Contrasena</span>
+                    <div class="input-shell">••••••••••</div>
+                  </label>
+                </div>
+
+                <div class="plans-grid">
+                  {% for plan in vip_plans %}
+                  <article class="plan-card plan-{{ plan.theme }} {% if plan.featured %}featured{% endif %}">
+                    <small>{{ plan.caption }}</small>
+                    <h4>Plan {{ plan.name }}</h4>
+                    <strong>{{ plan.price }}</strong>
+                    <ul>
+                      {% for feature in plan.features %}
+                      <li>{{ feature }}</li>
+                      {% endfor %}
+                    </ul>
+                  </article>
+                  {% endfor %}
+                </div>
+
+                <button class="gold-button submit-button" type="button">
+                  Continuar con Aurora VIP
+                </button>
+              </div>
+            </section>
+          </article>
+
+          <article class="mockup-card">
+            <div class="mockup-label">
+              <span>03</span>
+              <div>
+                <strong>Pantalla VIP Aurora</strong>
+                <p>Estrenos exclusivos y beneficios premium</p>
+              </div>
+            </div>
+
+            <section class="desktop-mockup vip-ui">
+              <div class="vip-hero">
+                <div>
+                  <span class="hero-tag">Miembro Diamante</span>
+                  <h3>AURORA VIP exclusives</h3>
+                  <p>
+                    Dashboard premium para mostrar todos los lanzamientos en
+                    exclusiva, funciones privadas y el valor real del programa
+                    VIP del cine.
+                  </p>
+                </div>
+                <div class="status-card">
+                  <small>Nivel actual</small>
+                  <strong>DIAMANTE</strong>
+                  <span>Acceso total a zonas VIP y preventas premium</span>
+                </div>
+              </div>
+
+              <div class="vip-grid">
+                <section class="vip-column">
+                  <div class="block-head">
+                    <h4>Lanzamientos exclusivos</h4>
+                    <span>Solo Aurora VIP</span>
+                  </div>
+                  <div class="exclusive-list">
+                    {% for item in vip_exclusives %}
+                    <article class="exclusive-card exclusive-{{ item.theme }}">
+                      <span>{{ item.tag }}</span>
+                      <h5>{{ item.title }}</h5>
+                      <p>{{ item.caption }}</p>
+                    </article>
+                    {% endfor %}
+                  </div>
+                </section>
+
+                <section class="vip-column">
+                  <div class="block-head">
+                    <h4>Beneficios del cine VIP</h4>
+                    <span>Experiencia premium</span>
+                  </div>
+                  <div class="benefit-grid">
+                    {% for benefit in vip_benefits %}
+                    <article class="benefit-card {{ benefit.kind }}">
+                      <small>{{ benefit.kind }}</small>
+                      <h5>{{ benefit.title }}</h5>
+                      <strong>{{ benefit.value }}</strong>
+                    </article>
+                    {% endfor %}
+                  </div>
+                </section>
+              </div>
+            </section>
+          </article>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

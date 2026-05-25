@@ -1,0 +1,35 @@
+<svg width="900" height="700" viewBox="0 0 900 700" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="120" y1="80" x2="760" y2="620" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1E2530"/>
+      <stop offset="0.55" stop-color="#10151D"/>
+      <stop offset="1" stop-color="#090C12"/>
+    </linearGradient>
+    <linearGradient id="gem" x1="464" y1="136" x2="734" y2="420" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F4FAFF"/>
+      <stop offset="0.28" stop-color="#C8D6E4"/>
+      <stop offset="0.62" stop-color="#8493A4"/>
+      <stop offset="1" stop-color="#445161"/>
+    </linearGradient>
+    <radialGradient id="shine" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(672 174) rotate(122) scale(280 220)">
+      <stop stop-color="#E4F2FF" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#E4F2FF" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="900" height="700" rx="36" fill="url(#bg)"/>
+  <rect width="900" height="700" rx="36" fill="url(#shine)"/>
+  <g opacity="0.26">
+    <path d="M614 154H736L784 218L676 382L566 218L614 154Z" fill="url(#gem)"/>
+    <path d="M614 154L646 218L676 382L566 218L614 154Z" fill="#F5FBFF" fill-opacity="0.42"/>
+    <path d="M736 154L704 218L676 382L784 218L736 154Z" fill="#596879" fill-opacity="0.42"/>
+    <path d="M646 218H704L676 382L646 218Z" fill="#DCEAF6" fill-opacity="0.5"/>
+    <path d="M566 218H784" stroke="#F7FCFF" stroke-opacity="0.32" stroke-width="4"/>
+    <path d="M614 154H736" stroke="#F7FCFF" stroke-opacity="0.36" stroke-width="4"/>
+  </g>
+  <g opacity="0.14">
+    <path d="M516 122L554 160L512 202L474 164L516 122Z" fill="#EAF5FF"/>
+    <path d="M760 336L792 368L756 404L724 372L760 336Z" fill="#EAF5FF"/>
+    <path d="M560 404L584 428L558 454L534 430L560 404Z" fill="#EAF5FF"/>
+  </g>
+  <circle cx="738" cy="152" r="104" fill="#E9F6FF" fill-opacity="0.08"/>
+</svg>

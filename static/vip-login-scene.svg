@@ -1,0 +1,124 @@
+<svg width="1600" height="1200" viewBox="0 0 1600 1200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="160" y1="90" x2="1420" y2="1110" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1D1822"/>
+      <stop offset="0.38" stop-color="#0F1727"/>
+      <stop offset="1" stop-color="#05070D"/>
+    </linearGradient>
+    <radialGradient id="goldGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1180 290) rotate(129.6) scale(530 430)">
+      <stop stop-color="#F3C96A" stop-opacity="0.9"/>
+      <stop offset="0.45" stop-color="#C98A24" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#020409" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="blueGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1030 580) rotate(120) scale(700 680)">
+      <stop stop-color="#2A5DFF" stop-opacity="0.48"/>
+      <stop offset="0.45" stop-color="#182D70" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#03050B" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="screen" x1="960" y1="140" x2="1400" y2="510" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F8D270"/>
+      <stop offset="0.46" stop-color="#FF6A3D"/>
+      <stop offset="1" stop-color="#1F56FF"/>
+    </linearGradient>
+    <linearGradient id="ticket" x1="1130" y1="760" x2="1370" y2="990" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF2C2"/>
+      <stop offset="0.48" stop-color="#F2C870"/>
+      <stop offset="1" stop-color="#B9781D"/>
+    </linearGradient>
+    <linearGradient id="seat" x1="170" y1="760" x2="1260" y2="1120" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#481A28"/>
+      <stop offset="1" stop-color="#210C14"/>
+    </linearGradient>
+    <filter id="softBlur" x="-200" y="-200" width="2000" height="1600" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="36"/>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="1200" fill="url(#bg)"/>
+  <rect width="1600" height="1200" fill="url(#goldGlow)"/>
+  <rect width="1600" height="1200" fill="url(#blueGlow)"/>
+
+  <g opacity="0.28" filter="url(#softBlur)">
+    <circle cx="1215" cy="302" r="120" fill="#FFD775"/>
+    <circle cx="1065" cy="502" r="160" fill="#2A5DFF"/>
+  </g>
+
+  <g opacity="0.9">
+    <rect x="940" y="130" width="460" height="340" rx="36" fill="#090C12" stroke="rgba(255,255,255,0.12)"/>
+    <rect x="970" y="160" width="400" height="280" rx="24" fill="url(#screen)"/>
+    <path d="M1090 390C1132 342 1161 314 1204 286C1227 302 1253 320 1278 340C1241 375 1209 407 1173 442C1148 425 1118 406 1090 390Z" fill="#0A111E" fill-opacity="0.72"/>
+    <path d="M1238 228L1274 260L1180 354L1144 322L1238 228Z" fill="#FFF1B9" fill-opacity="0.88"/>
+    <circle cx="1254" cy="232" r="28" fill="#0B1019" fill-opacity="0.72"/>
+    <path d="M1022 250C1070 208 1114 194 1160 196C1126 232 1102 280 1094 332C1060 322 1037 298 1022 250Z" fill="#0B1019" fill-opacity="0.68"/>
+    <path d="M1000 415H1340" stroke="#FFF2BE" stroke-opacity="0.6" stroke-width="4" stroke-linecap="round"/>
+  </g>
+
+  <g opacity="0.28">
+    <path d="M264 1020C426 972 598 948 756 964C914 980 1076 1040 1238 1078V1200H264V1020Z" fill="#06080F"/>
+    <path d="M0 1048C242 994 512 982 768 1006C1036 1030 1320 1094 1600 1200H0V1048Z" fill="#04060C"/>
+  </g>
+
+  <g>
+    <rect x="242" y="876" width="276" height="210" rx="58" fill="url(#seat)"/>
+    <rect x="548" y="838" width="338" height="250" rx="68" fill="url(#seat)"/>
+    <rect x="922" y="884" width="304" height="206" rx="58" fill="url(#seat)"/>
+  </g>
+
+  <g>
+    <ellipse cx="474" cy="562" rx="92" ry="108" fill="#090D15"/>
+    <rect x="388" y="660" width="172" height="212" rx="76" fill="#0A0E16"/>
+    <rect x="415" y="548" width="120" height="42" rx="21" fill="#111826"/>
+    <rect x="422" y="554" width="48" height="30" rx="10" fill="#FF4B5B"/>
+    <rect x="480" y="554" width="48" height="30" rx="10" fill="#3DB6FF"/>
+    <rect x="468" y="562" width="10" height="14" rx="5" fill="#CFC7B5"/>
+    <path d="M454 736C490 736 520 768 520 808V868H428V808C428 768 458 736 494 736H454Z" fill="#111826"/>
+    <path d="M406 716L442 684L510 756L470 792L406 716Z" fill="#0A0E16"/>
+    <path d="M546 710L512 678L442 754L484 790L546 710Z" fill="#0A0E16"/>
+  </g>
+
+  <g>
+    <ellipse cx="700" cy="512" rx="78" ry="94" fill="#080C14"/>
+    <rect x="624" y="598" width="152" height="238" rx="72" fill="#090D15"/>
+    <rect x="640" y="506" width="120" height="42" rx="21" fill="#121A29"/>
+    <rect x="648" y="512" width="48" height="30" rx="10" fill="#FF4B5B"/>
+    <rect x="704" y="512" width="48" height="30" rx="10" fill="#3DB6FF"/>
+    <rect x="696" y="520" width="10" height="14" rx="5" fill="#CBC1AA"/>
+    <rect x="668" y="670" width="70" height="124" rx="18" fill="#F0C15A"/>
+    <path d="M668 670L648 632H758L738 670H668Z" fill="#F7E2A4"/>
+    <path d="M684 638L704 670" stroke="#D6881D" stroke-width="7" stroke-linecap="round"/>
+    <path d="M706 638L726 670" stroke="#D6881D" stroke-width="7" stroke-linecap="round"/>
+    <path d="M728 638L748 670" stroke="#D6881D" stroke-width="7" stroke-linecap="round"/>
+    <circle cx="670" cy="630" r="20" fill="#FFF1C7"/>
+    <circle cx="704" cy="620" r="24" fill="#FFF1C7"/>
+    <circle cx="734" cy="634" r="18" fill="#FFF1C7"/>
+  </g>
+
+  <g>
+    <ellipse cx="926" cy="564" rx="88" ry="104" fill="#090D15"/>
+    <rect x="844" y="656" width="164" height="212" rx="76" fill="#0A0E16"/>
+    <rect x="862" y="552" width="126" height="42" rx="21" fill="#111826"/>
+    <rect x="870" y="558" width="50" height="30" rx="10" fill="#FF4B5B"/>
+    <rect x="930" y="558" width="50" height="30" rx="10" fill="#3DB6FF"/>
+    <rect x="920" y="566" width="12" height="14" rx="6" fill="#C9C1B2"/>
+    <rect x="980" y="698" width="56" height="124" rx="24" fill="#CF3B33"/>
+    <path d="M992 662H1024C1035 662 1044 671 1044 682V700H972V682C972 671 981 662 992 662Z" fill="#E6F0FF"/>
+    <path d="M1012 620C1036 638 1038 660 1026 686" stroke="#E9F0F8" stroke-width="8" stroke-linecap="round"/>
+  </g>
+
+  <g opacity="0.92">
+    <g transform="rotate(-10 1240 880)">
+      <rect x="1118" y="760" width="252" height="170" rx="28" fill="url(#ticket)"/>
+      <rect x="1140" y="782" width="208" height="126" rx="18" fill="#15120E" fill-opacity="0.22"/>
+      <path d="M1190 760C1190 782 1172 800 1150 800C1172 800 1190 818 1190 840V850C1190 872 1172 890 1150 890C1172 890 1190 908 1190 930" stroke="#6C4710" stroke-width="8" stroke-linecap="round"/>
+      <path d="M1298 760C1298 782 1316 800 1338 800C1316 800 1298 818 1298 840V850C1298 872 1316 890 1338 890C1316 890 1298 908 1298 930" stroke="#6C4710" stroke-width="8" stroke-linecap="round"/>
+      <text x="1244" y="812" text-anchor="middle" fill="#4A2C00" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="700" letter-spacing="4">AURORA</text>
+      <text x="1244" y="860" text-anchor="middle" fill="#382100" font-family="Segoe UI, Arial, sans-serif" font-size="48" font-weight="800">VIP PASS</text>
+      <text x="1244" y="894" text-anchor="middle" fill="#6F4810" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" letter-spacing="3">PREMIERE ACCESS</text>
+    </g>
+  </g>
+
+  <g opacity="0.75">
+    <path d="M212 980H1410" stroke="rgba(255,255,255,0.08)" stroke-width="4"/>
+    <path d="M180 1010C430 980 676 982 948 1004C1092 1016 1260 1042 1420 1086" stroke="rgba(255,218,129,0.10)" stroke-width="3"/>
+  </g>
+</svg>

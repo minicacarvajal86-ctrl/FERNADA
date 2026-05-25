@@ -1,0 +1,18 @@
+<svg width="700" height="520" viewBox="0 0 700 520" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="coin" x1="380" y1="128" x2="560" y2="306" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F2F7FC"/>
+      <stop offset="0.48" stop-color="#CBD8E5"/>
+      <stop offset="1" stop-color="#6D7A8C"/>
+    </linearGradient>
+  </defs>
+  <g opacity="0.28">
+    <circle cx="470" cy="220" r="88" fill="url(#coin)"/>
+    <circle cx="470" cy="220" r="58" fill="#98A8BA" fill-opacity="0.46"/>
+    <path d="M448 220H492" stroke="#F8FBFF" stroke-width="12" stroke-linecap="round"/>
+    <path d="M470 198V242" stroke="#F8FBFF" stroke-width="12" stroke-linecap="round"/>
+    <circle cx="538" cy="292" r="52" fill="#E2EBF5" fill-opacity="0.42"/>
+    <path d="M520 292H556" stroke="#F8FBFF" stroke-width="10" stroke-linecap="round"/>
+    <path d="M538 274V310" stroke="#F8FBFF" stroke-width="10" stroke-linecap="round"/>
+  </g>
+</svg>
